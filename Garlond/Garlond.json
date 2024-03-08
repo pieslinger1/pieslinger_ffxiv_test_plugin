@@ -1,0 +1,12 @@
+{
+  "Author": "your name here",
+  "Name": "Garlond",
+  "Punchline": "Blueplanet's test plugin",
+  "Description": "Open with /garlond",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "sample",
+    "plugin",
+    "goats"
+  ]
+}

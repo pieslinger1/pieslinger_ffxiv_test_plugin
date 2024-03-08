@@ -2,7 +2,7 @@
 using Dalamud.Plugin;
 using System;
 
-namespace SamplePlugin
+namespace Garlond
 {
     [Serializable]
     public class Configuration : IPluginConfiguration
@@ -10,6 +10,8 @@ namespace SamplePlugin
         public int Version { get; set; } = 0;
 
         public bool SomePropertyToBeSavedAndWithADefault { get; set; } = true;
+        public int TimeZoneUTC { get; set; } = (int) TimeZoneInfo.Local.BaseUtcOffset.Hours;
+        public string TextProperty { get; set; } = "default value";
 
         // the below exist just to make saving less cumbersome
         [NonSerialized]
